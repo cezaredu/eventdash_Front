@@ -8,43 +8,39 @@ function recuperainfo(){
  
     //document.getElementById("fotoUser").innerHTML = `<img src = "${user.linkFoto}" width="100%">`
     //document.getElementById("fotoUser").innerHTML = `<img src = "../eventdash_Front/imagem/fundo_relatorio2.jpg" width="100%" border="0%">`
-    document.getElementById("bioUser").innerHTML = `<h4><font color=white>Olá ${user.nome}, você da área ${user.departamento}, selecione o relatório que deseja:</font></h4>
+    document.getElementById("bioUser").innerHTML = `<h4><font color=white>Olá ${user.nome}, você é da área de ${user.departamento}, selecione o relatório que deseja:</font></h4>
                                                     <hr>
+                                                    <br>
                                                     <div class="container">
                                                         <div class="row">
-                                                            <div class="col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+                                                            <div class="col-xs-5 col-sm-5 col-lg-6 col-xl-6">
                                                                 <div class="card" style="width: 20rem;" >
                                                                     <img src="../eventdash_Front/imagem/monitoramento-de-ti.png" class="card-img-top" alt="...">
                                                                     <div class="card-body">
-                                                                    <h5 class="card-title">Relatorio por Eventos</h5>
-                                                                        <p class="card-text">Selecione esta opção para gerar um relatorio dos eventos por período</p>
-                                                                        <a href="eventos.html" class="btn btn-primary">Clique aqui</a>
+                                                                    <b><h5 class="card-title">Relatório por Eventos</h5></b>
+                                                                        <p class="card-text">Selecione esta opção para gerar um relatório dos eventos por período</p>
+                                                                        <a href="eventos.html" class="btn btn-primary">Clique aqui</a><br>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+                                                            <div class="col-xs-1 col-sm-1 col-lg-1 col-xl-1">
+                                                            <br>
+                                                            </div>
+                                                            <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
                                                                 <div class="card" style="width: 20rem;">
                                                                     <img src="../eventdash_Front/imagem/alarme.png" class="card-img-top" alt="...">
                                                                     <div class="card-body">
-                                                                        <h5 class="card-title">Relatorio por Alarmes</h5>
-                                                                        <p class="card-text">Selecione esta opção para gerar um relatorio dos alarme</p>
+                                                                        <b><h5 class="card-title">Relatório por Alarmes</h5></b>
+                                                                        <p class="card-text">Selecione esta opção para gerar um relatório dos alarme</p>
                                                                         <a href="alarmes.html" class="btn btn-primary">Clique aqui</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="col-xs-1 col-sm-1 col-lg-0 col-xl-0">
+                                                            <br>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <br><br>
-                                                    <button type="button" class="btn btn-primary" onclick="logout()">Logout</button> `
-                                                    // <strong>Racf:</strong> ${user.racf} <br>
-                                                    //<strong>Email:</strong> ${user.email} <br>
-                                                    //<strong>Ramal:</strong> ${user.ramal} <br>
-                                                    //<strong>Departamento:</strong> ${user.departamento}<br><br> 
-                                                    //<button type="button" class="btn btn-primary" onclick="logout()">Logout</button> `;
-
-                                                    //<a href="eventos.html">  Relatório de Eventos por Período </a><br>
-                                                    //</br><a href="alarmes.html"> Relatório de Alarmes Monitorados</a>
-
+                                                    </div>`
                                                 }
 
 function logout(){

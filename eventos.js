@@ -10,6 +10,9 @@ function logout(){
     window.location = "index.html"
 }
 
+function voltar(){
+    window.location = "relatorios.html"
+}
 
 function gerarRelatorio(){
     var txtIni = document.getElementById("txtDataIni").value;
@@ -17,17 +20,6 @@ function gerarRelatorio(){
 
     console.log("Datas capturadas "+txtIni+" / "+txtFim);
 
-    /*
-    passos: 
-    1 - enviar os dados para o backend
-    2 - ao chegar a resposta, precisamos extrair o JSON dela -> isso deve trazer uma lista de eventos
-    3 - gerar dinamicamente uma tabela com esses valores da lista
-    */
-    /*
-    res = fetch(...)
-    lista = res.json()
-    console.log(lista);
-    */
     fetch("http://localhost:8080/eventosporperiodo?inicio="+txtIni+"&fim="+txtFim)
         .then(res => res.json())
         .then(lista => preencheRelatorio(lista));
@@ -44,7 +36,7 @@ function preencheRelatorio(lista){
         eventoAr.push(evento.data);
         eventoAr.push(evento.alarme.nome);
         eventoAr.push(evento.equipamento.hostname);
-        eventoAr.push(evento.equipamento.ipaddr);
+        eventoAr.push(evento.equipamento.ipAddr);
         console.log(eventoAr);
 
         dados.push(eventoAr);
@@ -60,13 +52,18 @@ function preencheRelatorio(lista){
             {title: "Hostname"},
             {title: "IPAddress"},
         ],
-        autoWidth: true
+        autoWidth: true,
+        columnDefs: [
+            {
+                targets: ['_all'],
+                className: 'display'
+            }
+        ]
         
     });
                             
 }
 
 function relatorioRefresh(){
-    /* location.reload() */
-        DataTable.clear();
+    location.reload()
 }
