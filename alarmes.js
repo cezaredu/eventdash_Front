@@ -100,3 +100,13 @@ function preencheEquipamento(lista){
    });
                            
 }
+
+function gerarImpressaoAlarme(){
+ 
+    window.location="alarmeImpressao.html";
+}
+
+function gerarImpressaoEquipamentos(){
+ 
+    window.location="equipamentoImpressao.html";
+}

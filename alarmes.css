@@ -1,0 +1,43 @@
+
+#tabelaAlarme_length{
+    color: white;
+}
+
+#tabelaAlarme_filter{
+    color: white;
+}
+
+#tabelaAlarme_info{
+    color: white;
+}
+
+.dataTables_wrapper .dataTables_filter input{
+    color: white;
+}
+
+.dataTables_wrapper .dataTables_length select{
+    color: white;
+    background-color: black;
+}
+
+#tabelaEquipamento_length{
+    color: white;
+}
+
+#tabelaEquipamento_filter{
+    color: white;
+}
+
+#tabelaEquipamento_info{
+    color: white;
+}
+
+#botaoImpressaoAlarme{
+    background-color:green;
+    border-color: green;
+}
+
+#botaoImpressaoEquipamentos{
+    background-color:green;
+    border-color: green;
+}

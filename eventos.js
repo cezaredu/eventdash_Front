@@ -67,3 +67,10 @@ function preencheRelatorio(lista){
 function relatorioRefresh(){
     location.reload()
 }
+
+function gerarImpressao(){
+    var ini = document.getElementById("txtDataIni").value;
+    var fim = document.getElementById("txtDataFim").value;
+
+    window.location="impressao.html?ini="+ini+"&fim="+fim;
+}
