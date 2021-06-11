@@ -26,6 +26,7 @@ function enviarDados(){
 
 // passo 4 - Tratar o resultado
 function trataResposta(resp){
+    document.getElementById("msg").style.color = "white"
     if (resp.status == 200) {
         resp.json().then(user => {
             localStorage.setItem("userDASH", JSON.stringify(user));
