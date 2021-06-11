@@ -12,8 +12,6 @@ function recuperainfo(){
 
     var user = JSON.parse(userStr);
  
-    //document.getElementById("fotoUser").innerHTML = `<img src = "${user.linkFoto}" width="100%">`
-    //document.getElementById("fotoUser").innerHTML = `<img src = "../eventdash_Front/imagem/fundo_relatorio2.jpg" width="100%" border="0%">`
     document.getElementById("bioUser").innerHTML = `<h4><font color=white>Olá ${user.nome}, você é da área de ${user.departamento}, selecione o tipo de relatório desejado:</font></h4>
                                                     <hr>
                                                     <br>
@@ -52,8 +50,6 @@ function recuperainfo(){
 
         var user = JSON.parse(userStr);
  
-        //document.getElementById("fotoUser").innerHTML = `<img src = "${user.linkFoto}" width="100%">`
-        //document.getElementById("fotoUser").innerHTML = `<img src = "../eventdash_Front/imagem/fundo_relatorio2.jpg" width="100%" border="0%">`
         document.getElementById("bioUser").innerHTML = `<h4><font color=white>Olá ${user.nome}, você é da área de ${user.departamento}, selecione o tipo de relatório desejado:</font></h4>
                                                         <hr>
                                                         <br>
